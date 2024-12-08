@@ -32,7 +32,7 @@ jobs:
         run: "deno install"
 
       - name: Build step
-        run: "task dev"
+        run: "--env -A --watch main.ts"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
